@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 200px;  
+}
+
+#project-base {
+  width: 95%;
+  max-width: 800px;
+  margin: 48vh auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.5rem;
+}
+
+#project-base a {
+  color: #111;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+#project-base a:hover {
+  color:#F56960;
+}
