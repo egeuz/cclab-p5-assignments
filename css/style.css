@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 200px;  
 }
 
 #project-base {

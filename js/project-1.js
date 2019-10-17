@@ -17,13 +17,16 @@ function draw() {
 
 class Ship {
   constructor() {
-
+    this.location = createVector();
   }
+
   run() {
     this.display();
   }
   display() {
+    this.location = createVector(mouseX, mouseY);
     ellipse(mouseX, mouseY, 55, 55);
+    console.log(location);
   }
 }
 
@@ -36,7 +39,7 @@ class Bullet {
   }
 
   launch() {
-
+    
   }
 
   run() {
@@ -44,10 +47,19 @@ class Bullet {
     checkHit();
   }
 
+  hasHit(ship) {
+    
+  }
+
   update() {
     this.velocity.add(acceleration);
     this.velocity.limit(maxspeed);
     this.location.add(velocity);
+  }
+
+  display() {
+    fill(255, 0, 0);
+    rect(this.location.x, this.location.y, 20, 20);
   }
 
 
