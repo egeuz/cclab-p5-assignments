@@ -80,7 +80,7 @@ class Agent {
     let separate = this.separate(vehicles);
     let cohesion = this.cohesion(vehicles);
     let align = this.align(vehicles);
-    let seekMouse = this.seek(createVector(mouseX, mouseY));
+    // let seekMouse = this.seek(createVector(mouseX, mouseY));
 
     //behavior weights
     // separate.mult(1.5);
@@ -92,7 +92,7 @@ class Agent {
     this.applyForce(separate);
     this.applyForce(cohesion);
     this.applyForce(align);
-    this.applyForce(seekMouse);
+    // this.applyForce(seekMouse);
   }
 
   seek(target) {
